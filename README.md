@@ -8,6 +8,7 @@ The system replaces the traditional manual visitor register with a secure, effic
 ## 📌 Project Overview
 
 The **College Visitor Entry Management System** allows administrators to:
+
 - Record visitor entry details
 - Track visitor exit time
 - View complete visitor history
@@ -57,7 +58,6 @@ CollegeVisitorSystem/
 ├── .vscode/ → VS Code configuration
 └── README.md
 
-
 ---
 
 ## ⚙️ Features
@@ -74,6 +74,7 @@ CollegeVisitorSystem/
 ## 🗄️ Database Design
 
 ### Admin Table
+
 ```sql
 CREATE TABLE admin (
     admin_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -83,6 +84,7 @@ CREATE TABLE admin (
 
 ### Visitor Table
 ```
+
 CREATE TABLE visitor (
     visitor_id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100),
@@ -96,12 +98,15 @@ CREATE TABLE visitor (
 ## ▶️ How to Run the Project
 
 ### Prerequisites
+
 - Java JDK 8 installed  
 - MySQL Server running  
 - VS Code with Java Extension Pack  
 
 ### Steps
+
 1. Clone the repository
+
    ```bash
    git clone https://github.com/<your-username>/CollegeVisitorSystem.git
 
@@ -113,31 +118,28 @@ Update database credentials in:
 
 src/util/DBConnection.java
 
-
 Run the application:  
 
-
 src/main/MainApp.java
-
 
 ---
 
 ## 🔐 Default Login Credentials
 
-
 Username: admin
 Password: admin123
-
 
 ---
 
 ## 📄 Output
+
 - Visitor records stored in MySQL database  
 - Visitor pass generated as `VisitorPass.pdf` in the project directory  
 
 ---
 
 ## 🎓 Academic Relevance
+
 - Covers OOP concepts  
 - Implements Exception Handling  
 - Uses JDBC  
@@ -147,6 +149,7 @@ Password: admin123
 ---
 
 ## 🚀 Future Enhancements
+
 - QR code–based visitor passes  
 - Host notification via email/SMS  
 - Role-based access control  
@@ -156,6 +159,7 @@ Password: admin123
 ---
 
 ## 👨‍💻 Author
+
 **Naman Gupta**  
 Bachelor of Computer Applications (BCA)  
 Java Programming Project  
@@ -163,4 +167,5 @@ Java Programming Project
 ---
 
 ## 📜 License
+
 This project is licensed under the **MIT License**.
