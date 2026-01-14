@@ -48,15 +48,15 @@ MySQL Database
 
 CollegeVisitorSystem/
 ├── src/
-│ ├── ui/ # Swing UI screens
-│ ├── dao/ # Database access objects
-│ ├── model/ # Entity / model classes
-│ ├── util/ # Database connection & utilities
-│ ├── report/ # PDF generation logic
-│ └── main/ # Application entry point
-├── lib/ # External JAR files (JDBC, iText)
-├── .vscode/ # VS Code configuration files
-└── README.md # Project documentation
+│ ├── ui/ → Swing UI screens
+│ ├── dao/ → Database operations
+│ ├── model/ → Entity classes
+│ ├── util/ → Database connection
+│ ├── report/ → PDF generation
+│ └── main/ → Application entry point
+├── lib/ → External JAR files
+├── .vscode/ → VS Code configuration
+└── README.md
 
 ---
 
