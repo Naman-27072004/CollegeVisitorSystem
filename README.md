@@ -20,16 +20,16 @@ The application is built using **Core Java**, **Swing for GUI**, and **JDBC for 
 
 ## 🛠️ Technology Stack
 
-| Layer                 | Technology                 |
-| --------------------- | -------------------------- |
-| Programming Language  | Java (JDK 8)               |
-| GUI                   | Java Swing                 |
-| Database              | MySQL                      |
-| Database Connectivity | JDBC                       |
-| Architecture          | Two-Tier Architecture      |
-| File Handling         | Java I/O                   |
-| Reporting             | PDF generation using iText |
-| IDE                   | VS Code                    |
+| Layer | Technology |
+|------|-----------|
+| Programming Language | Java (JDK 8) |
+| GUI | Java Swing |
+| Database | MySQL |
+| Database Connectivity | JDBC |
+| Architecture | Two-Tier Architecture |
+| File Handling | Java I/O |
+| Reporting | PDF generation using iText |
+| IDE | VS Code |
 
 ---
 
@@ -40,6 +40,9 @@ Java Swing GUI
 JDBC
 |
 MySQL Database
+
+yaml
+Copy code
 
 ---
 
@@ -57,17 +60,19 @@ CollegeVisitorSystem/
 ├── .vscode/ → VS Code configuration
 └── README.md
 
+yaml
+Copy code
 
 ---
 
 ## ⚙️ Features
 
-- Admin login authentication  
-- Visitor entry management  
-- Visitor exit tracking  
-- Visitor records displayed in tabular form  
-- PDF visitor pass generation  
-- Secure database access using PreparedStatement  
+- Admin login authentication
+- Visitor entry management
+- Visitor exit tracking
+- Visitor records displayed in tabular form
+- PDF visitor pass generation
+- Secure database access using PreparedStatement
 
 ---
 
@@ -80,9 +85,9 @@ CREATE TABLE admin (
     username VARCHAR(50),
     password VARCHAR(50)
 );
-
-### Visitor Table
-```
+Visitor Table
+sql
+Copy code
 CREATE TABLE visitor (
     visitor_id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100),
@@ -92,75 +97,75 @@ CREATE TABLE visitor (
     entry_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     exit_time TIMESTAMP
 );
+▶️ How to Run the Project
+Prerequisites
+Java JDK 8 installed
 
-## ▶️ How to Run the Project
+MySQL Server running
 
-### Prerequisites
-- Java JDK 8 installed  
-- MySQL Server running  
-- VS Code with Java Extension Pack  
+VS Code with Java Extension Pack
 
-### Steps
-1. Clone the repository
-   ```bash
-   git clone https://github.com/<your-username>/CollegeVisitorSystem.git
+Steps
+Clone the repository
 
-Open the project folder in VS Code  
+bash
+Copy code
+git clone https://github.com/<your-username>/CollegeVisitorSystem.git
+Open the project folder in VS Code
 
-Add MySQL JDBC and iText JARs inside the `lib/` folder  
+Add MySQL JDBC and iText JARs inside lib/
 
-Update database credentials in:  
+Update database credentials in:
 
+bash
+Copy code
 src/util/DBConnection.java
+Run:
 
-
-Run the application:  
-
-
+css
+Copy code
 src/main/MainApp.java
-
-
----
-
-## 🔐 Default Login Credentials
-
-
+🔐 Default Login Credentials
+makefile
+Copy code
 Username: admin
 Password: admin123
+📄 Output
+Visitor records stored in MySQL database
 
+Visitor pass generated as VisitorPass.pdf in project directory
+
+🎓 Academic Relevance
+Covers OOP concepts
+
+Implements Exception Handling
+
+Uses JDBC
+
+Demonstrates GUI programming with Swing
+
+Suitable for BCA / MCA Java Programming projects
+
+🚀 Future Enhancements
+QR code–based visitor passes
+
+Host notification via email/SMS
+
+Role-based access control
+
+Web-based version
+
+Analytics dashboard
+
+👨‍💻 Author
+Naman Gupta
+Bachelor of Computer Applications (BCA)
+Java Programming Project
+
+📜 License
+This project is licensed under the MIT License.
+
+yaml
+Copy code
 
 ---
-
-## 📄 Output
-- Visitor records stored in MySQL database  
-- Visitor pass generated as `VisitorPass.pdf` in the project directory  
-
----
-
-## 🎓 Academic Relevance
-- Covers OOP concepts  
-- Implements Exception Handling  
-- Uses JDBC  
-- Demonstrates GUI programming with Swing  
-- Suitable for BCA / MCA Java Programming projects  
-
----
-
-## 🚀 Future Enhancements
-- QR code–based visitor passes  
-- Host notification via email/SMS  
-- Role-based access control  
-- Web-based version  
-- Analytics dashboard  
-
----
-
-## 👨‍💻 Author
-**Naman Gupta**  
-Bachelor of Computer Applications (BCA)  
-Java Programming Project  
-
----
-
-## 📜 License
-This project is licensed under the **MIT License**.
