@@ -82,8 +82,9 @@ CREATE TABLE admin (
     password VARCHAR(50)
 );
 
--- ### Visitor Table
--- ```sql
+### Visitor Table
+```
+
 CREATE TABLE visitor (
     visitor_id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100),
