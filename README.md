@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Getting Started
 
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
@@ -16,3 +17,7 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 ## Dependency Management
 
 The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+=======
+# CollegeVisitorSystem
+A Java-based College Visitor Entry Management System developed using Java Swing, JDBC, and MySQL to digitize visitor entry, exit, and record management with PDF-based visitor pass generation.
+>>>>>>> b5d5d77951ef2305481464adffa21b3c438a4791
