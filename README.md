@@ -108,7 +108,7 @@ CREATE TABLE visitor (
 1. Clone the repository
 
    ```bash
-   git clone https://github.com/<your-username>/CollegeVisitorSystem.git
+   git clone https://github.com/Naman-27072004/CollegeVisitorSystem.git
 
 Open the project folder in VS Code  
 
@@ -161,7 +161,7 @@ Password: admin123
 ## 👨‍💻 Author
 
 **Naman Gupta**  
-Bachelor of Computer Applications (BCA)  
+Masters of Computer Applications (MCA)  
 Java Programming Project  
 
 ---
