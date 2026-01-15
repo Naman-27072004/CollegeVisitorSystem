@@ -9,6 +9,8 @@ public class VisitorListUI extends JFrame {
     public VisitorListUI() {
         setTitle("Visitor Records");
         setSize(700, 300);
+        // Center the frame on the screen
+        setLocationRelativeTo(null);
 
         Vector<String> cols = new Vector<>();
         cols.add("ID");

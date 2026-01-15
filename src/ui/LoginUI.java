@@ -12,6 +12,10 @@ public class LoginUI extends JFrame {
         setTitle("Admin Login");
         setSize(300, 200);
         setLayout(null);
+        // Center the frame on the screen
+        setLocationRelativeTo(null);
+        // Prevent resizing
+        setResizable(false);
 
         JLabel u = new JLabel("Username");
         JLabel p = new JLabel("Password");

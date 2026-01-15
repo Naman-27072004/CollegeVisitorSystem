@@ -11,6 +11,10 @@ public class VisitorEntryUI extends JFrame {
         setTitle("Visitor Entry");
         setSize(350, 300);
         setLayout(null);
+        // Center the frame on the screen
+        setLocationRelativeTo(null);
+        // Prevent resizing
+        setResizable(false);
 
         JTextField name = new JTextField();
         JTextField mobile = new JTextField();

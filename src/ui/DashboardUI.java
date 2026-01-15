@@ -8,6 +8,10 @@ public class DashboardUI extends JFrame {
         setTitle("Dashboard");
         setSize(400, 300);
         setLayout(null);
+        // Center the frame on the screen
+        setLocationRelativeTo(null);
+        // Prevent resizing
+        setResizable(false);
 
         JButton entry = new JButton("Visitor Entry");
         JButton exit = new JButton("Visitor Exit");

@@ -9,6 +9,10 @@ public class VisitorExitUI extends JFrame {
         setTitle("Visitor Exit");
         setSize(250, 150);
         setLayout(null);
+        // Center the frame on the screen
+        setLocationRelativeTo(null);
+        // Prevent resizing
+        setResizable(false);
 
         JLabel l = new JLabel("Visitor ID");
         JTextField id = new JTextField();
