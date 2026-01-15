@@ -9,7 +9,7 @@ public class SplashScreen extends JWindow {
     private Timer timer;
 
     public SplashScreen() {
-        setSize(600, 400);
+        setSize(600, 600);
         setLocationRelativeTo(null); // center of screen
         getContentPane().setLayout(new BorderLayout());
 
@@ -22,8 +22,6 @@ public class SplashScreen extends JWindow {
 
         progressBar = new JProgressBar(0, 100);
         progressBar.setStringPainted(true);
-
-        JLabel footer = new JLabel("Loading, please wait...", JLabel.CENTER);
 
         getContentPane().add(title, BorderLayout.NORTH);
         getContentPane().add(logoLabel, BorderLayout.CENTER);
