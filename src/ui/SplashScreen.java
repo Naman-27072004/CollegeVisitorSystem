@@ -9,25 +9,25 @@ public class SplashScreen extends JWindow {
     private Timer timer;
 
     public SplashScreen() {
-        setSize(500, 300);
+        setSize(600, 400);
         setLocationRelativeTo(null); // center of screen
         getContentPane().setLayout(new BorderLayout());
 
-        // Title Label
+        ImageIcon icon = new ImageIcon("images/college_logo.png");
+        JLabel logoLabel = new JLabel(icon, JLabel.CENTER);
+
         JLabel title = new JLabel("College Visitor Entry System", JLabel.CENTER);
         title.setFont(new Font("Arial", Font.BOLD, 20));
-        title.setBorder(BorderFactory.createEmptyBorder(20, 0, 20, 0));
+        title.setBorder(BorderFactory.createEmptyBorder(10, 0, 10, 0));
 
-        // Progress Bar
         progressBar = new JProgressBar(0, 100);
         progressBar.setStringPainted(true);
 
-        // Footer Label
         JLabel footer = new JLabel("Loading, please wait...", JLabel.CENTER);
 
         getContentPane().add(title, BorderLayout.NORTH);
-        getContentPane().add(progressBar, BorderLayout.CENTER);
-        getContentPane().add(footer, BorderLayout.SOUTH);
+        getContentPane().add(logoLabel, BorderLayout.CENTER);
+        getContentPane().add(progressBar, BorderLayout.SOUTH);
 
         startLoading();
     }
@@ -39,8 +39,8 @@ public class SplashScreen extends JWindow {
                 progressBar.setValue(value + 1);
             } else {
                 timer.stop();
-                dispose(); // close splash screen
-                new LoginUI().setVisible(true); // open login screen
+                dispose();
+                new LoginUI().setVisible(true);
             }
         });
         timer.start();
