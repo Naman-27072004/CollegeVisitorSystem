@@ -1,9 +1,10 @@
 package main;
 
-import ui.LoginUI;
+import ui.SplashScreen;
 
 public class MainApp {
     public static void main(String[] args) {
-        new LoginUI();
+        SplashScreen splash = new SplashScreen();
+        splash.setVisible(true);
     }
 }
