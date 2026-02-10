@@ -111,19 +111,19 @@ CREATE TABLE visitor (
 
    ```bash
    git clone https://github.com/Naman-27072004/CollegeVisitorSystem.git
+    ```
+2. Open the project folder in VS Code  
 
-Open the project folder in VS Code  
+3. Add MySQL JDBC and iText JARs inside the `lib/` folder  
 
-Add MySQL JDBC and iText JARs inside the `lib/` folder  
-
-Update database credentials in:  
-
+4. Update database credentials in:  
+```
 src/util/DBConnection.java
-
-Run the application:  
-
+```
+5. Run the application:  
+```
 src/main/MainApp.java
-
+```
 ---
 
 ## 🔐 Default Login Credentials
