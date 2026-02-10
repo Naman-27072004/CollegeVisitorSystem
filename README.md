@@ -87,7 +87,7 @@ CREATE TABLE admin (
 
 ### Visitor Table
 ```
-
+```
 CREATE TABLE visitor (
     visitor_id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100),
@@ -97,7 +97,7 @@ CREATE TABLE visitor (
     entry_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     exit_time TIMESTAMP
 );
-
+```
 ## ▶️ How to Run the Project
 
 ### Prerequisites
