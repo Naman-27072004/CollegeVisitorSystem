@@ -117,13 +117,13 @@ CREATE TABLE visitor (
 3. Add MySQL JDBC and iText JARs inside the `lib/` folder  
 
 4. Update database credentials in:  
-```
-src/util/DBConnection.java
-```
+    ```bash
+    src/util/DBConnection.java
+    ```
 5. Run the application:  
-```
-src/main/MainApp.java
-```
+    ```bash
+    src/main/MainApp.java
+    ```
 ---
 
 ## 🔐 Default Login Credentials
