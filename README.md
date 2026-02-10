@@ -84,7 +84,7 @@ CREATE TABLE admin (
     username VARCHAR(50),
     password VARCHAR(50)
 );
-
+```
 ### Visitor Table
 ```
 ```
