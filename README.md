@@ -46,6 +46,7 @@ MySQL Database
 
 ## 📂 Project Structure
 
+```bash
 CollegeVisitorSystem/
 ├── src/
 │ ├── ui/ → Swing UI screens
@@ -57,6 +58,8 @@ CollegeVisitorSystem/
 ├── lib/ → External JAR files
 ├── .vscode/ → VS Code configuration
 └── README.md
+
+```
 
 ---
 
